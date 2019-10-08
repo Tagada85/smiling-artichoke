@@ -36,6 +36,14 @@
 
   img {
     width: 100%;
+    max-width: 650px;
+    margin: auto;
+    display: block;
+  }
+
+  img.about {
+    display: block;
+    max-width: 30%;
   }
 }
 
@@ -157,8 +165,9 @@
   }
 }
 
-@media only screen and (min-width: 801px) and (max-width: 1000px), only screen and (max-width: 600px) {
-.post-feed .post {
+@media only screen and (min-width: 801px) and (max-width: 1000px),
+  only screen and (max-width: 600px) {
+  .post-feed .post {
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
