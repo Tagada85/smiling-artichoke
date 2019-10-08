@@ -1,6 +1,7 @@
 {
   "layout_style": "overflow",
   "palette": "blue",
+  "siteUrl": "https://damiencosset.com",
   "header": {
     "title": "Damien Cosset",
     "tagline": "French web developer working with Javascript and JAVA",
