@@ -2,7 +2,7 @@
 title: Flow, a path to happiness
 subtitle: A way to achieve mastery in our busy lives
 excerpt: >-
-  In the new age of the information economy, how can we achieve a state a focus that allows us to gain knowledge, experience and expertise? Flow might bring an answer.
+  In the new age of the information economy, how can we achieve a state a focus that allows us to gain knowledge, experience and expertise? Flow might help us.
 date: "2019-10-6"
 thumb_img_path: images/flow-cover.png
 content_img_path: images/flow-cover.png
