@@ -8,10 +8,14 @@ import Footer from "./Footer";
 
 export default class Body extends React.Component {
   render() {
+    console.log(this.props);
     return (
       <React.Fragment>
         <Helmet>
-          <title>{_.get(this.props, "pageContext.frontmatter.title")}</title>
+          <title>
+            {_.get(this.props, "pageContext.frontmatter.title")} -{" "}
+            {_.get(this.props, "pageContext.site.data.author.name")}
+          </title>
           <meta charSet="utf-8" />
           <meta
             name="viewport"
