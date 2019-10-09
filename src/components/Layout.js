@@ -16,6 +16,14 @@ export default class Body extends React.Component {
             {_.get(this.props, "pageContext.frontmatter.title")} -{" "}
             {_.get(this.props, "pageContext.site.data.author.name")}
           </title>
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:image"
+            content={`${_.get(
+              this.props,
+              "pageContext.site.siteMetadata.siteUrl"
+            )}${_.get(this.props, "pathContext.name")}twitter-card.jpg`}
+          />
           <meta charSet="utf-8" />
           <meta
             name="viewport"
