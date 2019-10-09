@@ -52,3 +52,8 @@ Extrinsic motivation is dangerous and leads to dissatisfaction. Power, wealth an
 Flow is a crucial part of achieving mastery in any field. To become better, you have to create/request an environment that will allow you to reach a state of flow. Looking for flow is hard work, but you will find an immense potential for growth!
 
 Have fun!
+
+#### Sources
+
+- [Csikszentmihalyi Ted Talk](https://www.ted.com/talks/mihaly_csikszentmihalyi_on_flow?language=fr)
+- [Drive by David Pink](https://www.amazon.fr/Drive-Surprising-Truth-About-Motivates/dp/1594484805/ref=asc_df_1594484805/?tag=googshopfr-21&linkCode=df0&hvadid=51050687886&hvpos=1o1&hvnetw=g&hvrand=14638989329779823113&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9055611&hvtargid=pla-93725251980&psc=1)
