@@ -8,6 +8,12 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-149533256-1"
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
