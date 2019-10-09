@@ -22,7 +22,7 @@ export default class Body extends React.Component {
             content={`${_.get(
               this.props,
               "pageContext.site.siteMetadata.siteUrl"
-            )}${_.get(this.props, "pathContext.name")}twitter-card.jpg`}
+            )}${_.get(this.props, "pageContext.name")}twitter-card.jpg`}
           />
           <meta charSet="utf-8" />
           <meta

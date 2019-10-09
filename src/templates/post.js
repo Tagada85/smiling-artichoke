@@ -34,14 +34,13 @@ export default class Post extends React.Component {
           )}
           <div className="post-content">
             {htmlToReact(_.get(this.props, "pageContext.html"))}
-            <i className="fab fa-twitter" />
             <a
               target="_blank"
               href="https://twitter.com/share?ref_src=twsrc%5Etfw"
               class="twitter-share-button"
               data-show-count="true"
             >
-              {" "}
+              <i className="fab fa-twitter" />
               Share on Twitter
             </a>
             <script
