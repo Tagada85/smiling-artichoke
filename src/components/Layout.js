@@ -16,7 +16,6 @@ export default class Body extends React.Component {
             {_.get(this.props, "pageContext.frontmatter.title")} -{" "}
             {_.get(this.props, "pageContext.site.data.author.name")}
           </title>
-          <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:image"
             content={`${_.get(
@@ -24,7 +23,7 @@ export default class Body extends React.Component {
               "pageContext.frontmatter.thumb_img_path"
             )}`}
           />
-          <meta name="twitter:card" content="Summary" />
+          <meta name="twitter:card" content="summary" />
           <meta name="twitter:site" content="@DamCosset" />
           <meta
             name="twitter:title"
