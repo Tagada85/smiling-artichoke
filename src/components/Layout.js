@@ -21,8 +21,18 @@ export default class Body extends React.Component {
             name="twitter:image"
             content={`${_.get(
               this.props,
-              "pageContext.site.siteMetadata.siteUrl"
-            )}${_.get(this.props, "pageContext.name")}twitter-card.jpg`}
+              "pageContext.frontmatter.thumb_img_path"
+            )}`}
+          />
+          <meta name="twitter:card" content="Summary" />
+          <meta name="twitter:site" content="@DamCosset" />
+          <meta
+            name="twitter:title"
+            content={`${_.get(this.props, "pageContext.frontmatter.title")}`}
+          />
+          <meta
+            name="twitter:description"
+            content={`${_.get(this.props, "pageContext.frontmatter.subtitle")}`}
           />
           <meta charSet="utf-8" />
           <meta
