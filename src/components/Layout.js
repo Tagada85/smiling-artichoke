@@ -17,8 +17,8 @@ export default class Body extends React.Component {
             {_.get(this.props, "pageContext.site.data.author.name")}
           </title>
           <meta
-            name="twitter:image"
-            content={`${_.get(
+            name="twitter:image:src"
+            content={`https://damiencosset.com/${_.get(
               this.props,
               "pageContext.frontmatter.thumb_img_path"
             )}`}
