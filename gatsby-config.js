@@ -32,6 +32,7 @@ module.exports = {
       options: {
         plugins: [
           "gatsby-remark-emoji",
+          `gatsby-plugin-feed`,
           //`gatsby-remark-social-cards`,
           // {
           //   resolve: `gatsby-remark-prismjs`,
