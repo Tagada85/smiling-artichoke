@@ -1,6 +1,6 @@
 ---
 title: Technology's war on Death
-subtitle:
+subtitle: Should we even die?
 excerpt: >-
   Big tech companies and transhumanism united to create an immortal human race...
 date: "2019-11-05"
