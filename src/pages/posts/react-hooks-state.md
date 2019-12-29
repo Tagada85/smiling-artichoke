@@ -1,8 +1,9 @@
 ---
 title: How to use the state hook in React
+subtitle: A look at how to use the Hook state
 excerpt: >-
   Hooks have changed the way we use React. Classes components are no longer mandatory when we want to use state. Let's see how to use the state hook.
-date: "2019-12-28"
+date: "2019-12-29"
 thumb_img_path: images/react.png
 content_img_path: images/react.png
 tags: ["react", "hooks", "javascript", "state"]
