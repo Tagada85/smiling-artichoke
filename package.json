@@ -41,6 +41,7 @@
     "react-html-parser": "^2.0.2",
     "react-script-tag": "^1.1.2",
     "rehype-react": "^3.0.2",
-    "sprintf-js": "^1.1.2"
+    "sprintf-js": "^1.1.2",
+    "twitter": "^1.7.1"
   }
 }
