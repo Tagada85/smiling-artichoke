@@ -1,6 +1,6 @@
 ---
 title: Refactor a form with React Hooks
-subtitle:
+subtitle: Refactoring with the new Hook feature
 excerpt: >-
   Lately, React gave us a new toy with Hooks. Let's see how we could refactor a form.
 date: "2019-03-02"

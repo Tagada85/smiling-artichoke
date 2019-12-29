@@ -1,5 +1,6 @@
 ---
 title: Create a drawer navigation in React Native
+subtitle: A quick and easy way to have a beautiful navigation
 excerpt: >-
   In this article, we will explain how to create a simple drawer navigation for your React Native application.
 date: "2019-12-15"

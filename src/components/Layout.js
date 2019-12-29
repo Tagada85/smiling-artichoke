@@ -31,7 +31,9 @@ export default class Body extends React.Component {
           />
           <meta
             name="twitter:description"
-            content={`${_.get(this.props, "pageContext.frontmatter.subtitle")}`}
+            content={
+              `${_.get(this.props, "pageContext.frontmatter.subtitle")}` || ""
+            }
           />
           <meta charSet="utf-8" />
           <meta
