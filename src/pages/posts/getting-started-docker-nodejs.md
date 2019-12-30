@@ -6,7 +6,7 @@ excerpt: >-
 date: "2019-04-12"
 thumb_img_path: images/docker.jpeg
 content_img_path: images/docker.jpeg
-tags: ["docker", "nodejs", "express"]
+tags: ["docker", "nodejs", "express", "javascript"]
 template: post
 ---
 

@@ -6,7 +6,7 @@ excerpt: >-
 date: "2019-05-27"
 thumb_img_path: images/scraping.png
 content_img_path: images/scraping.png
-tags: ["javascript", "web scraping", "pupeteer"]
+tags: ["javascript", "webscraping", "puppeteer"]
 template: post
 ---
 

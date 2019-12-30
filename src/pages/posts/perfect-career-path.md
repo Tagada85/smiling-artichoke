@@ -6,7 +6,7 @@ excerpt: >-
 date: "2019-10-13"
 thumb_img_path: images/betterthanyou.png
 content_img_path: images/betterthanyou.png
-tags: ["career", "growth", "imposter syndrome"]
+tags: ["career", "growth", "impostersyndrome"]
 template: post
 ---
 

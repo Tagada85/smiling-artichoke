@@ -6,7 +6,7 @@ excerpt: >-
 date: "2019-12-15"
 thumb_img_path: images/react-native.png
 content_img_path: images/react-native.png
-tags: ["react native", "javascript", "react", "learning"]
+tags: ["reactnative", "javascript", "react", "learning"]
 template: post
 ---
 

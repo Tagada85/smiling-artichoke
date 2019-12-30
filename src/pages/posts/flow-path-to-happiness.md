@@ -6,6 +6,7 @@ excerpt: >-
 date: "2019-10-6"
 thumb_img_path: images/flow-cover.png
 content_img_path: images/flow-cover.png
+tags: ["flow", "happiness", "productivity", "mastery"]
 template: post
 ---
 
