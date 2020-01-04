@@ -15,6 +15,7 @@ let client = new Twit({
 
 exports.onCreateNode = ({ node, actions, getNode }) => {};
 exports.onPostBootstrap = gatsbyNodeHelpers => {
+  console.log("POST BOOTSTRAP");
   const { getNodesByType } = gatsbyNodeHelpers;
   const allNodes = getNodesByType(`MarkdownRemark`)
     .filter(node => node.fields.relativeDir == "posts")
@@ -26,22 +27,20 @@ exports.onPostBootstrap = gatsbyNodeHelpers => {
     });
 
   //console.log(allNodes);
-  let id = setInterval(() => {
-    let randomIndex = Math.floor(Math.random() * allNodes.length);
-    let article = allNodes.splice(randomIndex, 1)[0];
-    if (article) {
-      console.log("POSTING ARTICLE");
-      let status = `${
-        article.frontmatter.title
-      } #${article.frontmatter.tags.join(" #")}\n https://damiencosset.com${
-        article.fields.url
-      }`;
-      client.post("statuses/update", { status }, function(err, data, response) {
-        console.log(err);
-        console.log(data);
-      });
-    } else {
-      clearInterval(id);
-    }
-  }, 1000 * 60 * 60 * 24 * 2);
+  // let id = setInterval(() => {
+  let randomIndex = Math.floor(Math.random() * allNodes.length);
+  let article = allNodes.splice(randomIndex, 1)[0];
+  if (article) {
+    console.log("POSTING ARTICLE");
+    let status = `${article.frontmatter.title} #${article.frontmatter.tags.join(
+      " #"
+    )}\n https://damiencosset.com${article.fields.url}`;
+    client.post("statuses/update", { status }, function(err, data, response) {
+      console.log(err);
+      console.log(data);
+    });
+  }
+  //     clearInterval(id);
+  //   }
+  // }, 1000 * 60 * 60 * 24 * 2);
 };
