@@ -30,6 +30,7 @@ exports.onPostBootstrap = gatsbyNodeHelpers => {
     let randomIndex = Math.floor(Math.random() * allNodes.length);
     let article = allNodes.splice(randomIndex, 1)[0];
     if (article) {
+      console.log("POSTING ARTICLE");
       let status = `${
         article.frontmatter.title
       } #${article.frontmatter.tags.join(" #")}\n https://damiencosset.com${
