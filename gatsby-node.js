@@ -26,21 +26,40 @@ exports.onPostBootstrap = gatsbyNodeHelpers => {
       };
     });
 
-  //console.log(allNodes);
-  // let id = setInterval(() => {
-  let randomIndex = Math.floor(Math.random() * allNodes.length);
-  let article = allNodes.splice(randomIndex, 1)[0];
-  if (article) {
-    console.log("POSTING ARTICLE");
-    let status = `${article.frontmatter.title} #${article.frontmatter.tags.join(
-      " #"
-    )}\n https://damiencosset.com${article.fields.url}`;
-    client.post("statuses/update", { status }, function(err, data, response) {
-      console.log(err);
-      console.log(data);
-    });
+  // //console.log(allNodes);
+  //   let randomIndex = Math.floor(Math.random() * allNodes.length);
+  //   let article = allNodes.splice(randomIndex, 1)[0];
+  //if (article) {
+  postRandomArticle(allNodes);
+  //   let status = `${
+  //     article.frontmatter.title
+  //   } #${article.frontmatter.tags.join(" #")}\n https://damiencosset.com${
+  //     article.fields.url
+  //   }`;
+  //   client.post("statuses/update", { status }, function(err, data, response) {
+  //     console.log(err);
+  //     console.log(data);
+  //     setTimeout(postRandomArticle(allNodes), 1000*60*24)
+  //   });
+  // }
+};
+
+let postRandomArticle = allNodes => {
+  if (allNodes.length > 0) {
+    let randomIndex = Math.floor(Math.random() * allNodes.length);
+    let article = allNodes.splice(randomIndex, 1)[0];
+    if (article) {
+      console.log("POSTING ARTICLE");
+      let status = `${
+        article.frontmatter.title
+      } #${article.frontmatter.tags.join(" #")}\n https://damiencosset.com${
+        article.fields.url
+      }`;
+      client.post("statuses/update", { status }, function(err, data, response) {
+        console.log(err);
+        console.log(data);
+        setTimeout(() => postRandomArticle(allNodes), 1000 * 60 * 24);
+      });
+    }
   }
-  //     clearInterval(id);
-  //   }
-  // }, 1000 * 60 * 60 * 24 * 2);
 };
