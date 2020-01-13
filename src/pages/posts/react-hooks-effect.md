@@ -41,7 +41,7 @@ const ChangeColor = () => {
 }
 ```
 
-I've re-used the same logic from the _useState_ chapter, with an text input and the state Hook. I have added a side effect handled by the Effect hook. Everytime our component is done mounting, or is done being updated, we check the body's background color and change to blue or red depending on the body's current background.
+I've re-used the same logic <a href="/posts/react-hooks-state">from the _useState_ chapter</a>, with an text input and the state Hook. I have added a side effect handled by the Effect hook. Everytime our component is done mounting, or is done being updated, we check the body's background color and change to blue or red depending on the body's current background.
 
 Coming from classes and their lifecycles, the Effect hook is three different lifecycles in one:
 
@@ -128,7 +128,7 @@ const ChangeTitle = () => {
 
 Let's go into detail how the _useEffect_ hook works.
 
-- First, we create a state variable called _debateName_. If the state hook is still strange to you, I wrote something about the state hook.
+- First, we create a state variable called _debateName_. If the state hook is still strange to you, <a href="/posts/react-hooks-state">I wrote something about the state hook.<a/>
 
 - By using the _useEffect_ function, provided by the React API, we tell React we want to use an effect. Basically, we say: _I want to do something after my component is rendered_. The Effect hook takes a function as a parameter. That function is your effect! In this case, I'm using the browser API to modify the title of my document. You can do pretty much whatever you want in that function.
 
