@@ -30,7 +30,7 @@ Cypress uses a desktop application installed on your computer. To use it, you mu
 
 In this article, we will write our tests on a React application. So, before anything else, we'll create a React application with _create-react-app_. LEt's run the following command: `create-react-app first-cypress-tests`.
 
-If you do not have create-react-app installed, you can find instructions to get it [https://github.com/facebook/create-react-app](here). Once your application is set up, move inside your new React application folder: `cd first-cypress-tests`. Next, we'll install the Cypress package. I'll use yarn for this article and run `yarn add cypress --dev`. If you are a npm user, you can run `npm install cypress --save-dev`.
+If you do not have create-react-app installed, you can find instructions to get it [here](https://github.com/facebook/create-react-app). Once your application is set up, move inside your new React application folder: `cd first-cypress-tests`. Next, we'll install the Cypress package. I'll use yarn for this article and run `yarn add cypress --dev`. If you are a npm user, you can run `npm install cypress --save-dev`.
 
 Now that Cypress has been installed, we can run the Cypress Test Runner with the command `yarn run cypress open`. Or, with npm, you can run `$(npm bin)/cypress open`. You should the following window on your screen now.
 
@@ -46,7 +46,7 @@ After clicking the **OK, got it!** green button, you'll see the Cypress Test Run
 There are a few things we can see here. First, you can see all the test files listed in the window. Cypress will automatically find your test files inside the `cypress/integration` folder. Notice how each file ends with _spec.js_. I'll keep this naming throughout the article but you don't have to. On the right, you have a little dropdown.
 ![Browser dropdown](./images/cypress_3.png)
 
-This is a list of available browsers found by the Cypress Test Runner. When Cypress runs the tests, it launches a browser for you. As you can see, I only have two choices available. If you want to know what browsers can be used, and how to add them, you can read [https://docs.cypress.io/guides/guides/launching-browsers.html#Browsers](the docs). I'll stick with Chrome for now.
+This is a list of available browsers found by the Cypress Test Runner. When Cypress runs the tests, it launches a browser for you. As you can see, I only have two choices available. If you want to know what browsers can be used, and how to add them, you can read [the docs](https://docs.cypress.io/guides/guides/launching-browsers.html#Browsers). I'll stick with Chrome for now.
 
 Alright, let's run some tests! There are two ways you can do that. You can click the **Run all specs** button on the right, or click on a file name. If you do the latter, only this file's tests will run. When the tests start running, you will a browser open, depending on which one you chose in the Cypress Test Runner. We will have to time to come back to that in detail later, because I want to write my own custom tests now.
 
