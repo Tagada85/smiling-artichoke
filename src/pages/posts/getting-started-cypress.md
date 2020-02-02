@@ -4,8 +4,8 @@ subtitle: Let's explore this cool framework to test your Javascript UI
 excerpt: >-
   Testing the front-end has always been a difficult thing. Cypress aims to make it a lot easier. Let's see how we can test the UI of a React application
 date: "2020-02-01"
-thumb_img_path: images/cypress.jpeg
-content_img_path: images/cypress.jpeg
+thumb_img_path: images/cypress.png
+content_img_path: images/cypress.png
 tags: ["react", "cypress", "javascript", "testing"]
 template: post
 ---
