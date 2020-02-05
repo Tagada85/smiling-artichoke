@@ -11,7 +11,14 @@ sections:
     type: contentblock
     title: About
     content: >-
-      For the last 3 years, I have been using my web development knowledge to empower people and give them the tools to lead better lives. I love learning new technologies and tackle new challenges.
+      Hello everyone! My name is Damien Cosset and I am a French web developer.
+
+       Since late 2016, I work as a freelancer. I work mostly with Javascript technologies such as React or Meteor. I've also worked with Java for quite some time.
+
+       I believe in empowering people and companies with technologies. Code can make our lives better, but it can also make it worse if developers are not careful.
+
+       On my blog, you will find different types of articles, from classic tutorials to thoughts about our industry and freelancing. I hope you will enjoy it! :heart:
+
     actions:
       - label: Contact Me
         url: /contact
