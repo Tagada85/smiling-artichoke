@@ -9,6 +9,10 @@ menus:
 template: page
 ---
 
-Since late 2016, I work as a freelance web developer. I've had the chance to work with talented people from different parts of the world. I am a very strong believer in remote work.
+Hello everyone! My name is Damien Cosset and I am a French web developer.
 
-I love using technology and my knowledge to empower people.
+Since late 2016, I work as a freelancer. I work mostly with Javascript technologies such as React or Meteor. I've also worked with Java for quite some time.
+
+I believe in empowering people and companies with technologies. Code can make our lives better, but it can also make it worse if developers are not careful.
+
+On my blog, you will find different types of articles, from classic tutorials to thoughts about our industry and freelancing. I hope you will enjoy it! :heart:
