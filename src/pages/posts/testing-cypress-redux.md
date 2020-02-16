@@ -16,7 +16,7 @@ In the [previous article](https://damiencosset.com/posts/getting-started-cypress
 
 This article assumes that you've read the previous article, in order to install Cypress and launch it with your projects. A basic understanding of Redux is also a nice bonus.
 
-You can find the full code on Github.
+You can find the full code on [Github](https://github.com/Tagada85/cypress_redux).
 
 ## The goals
 
