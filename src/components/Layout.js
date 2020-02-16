@@ -17,6 +17,10 @@ export default class Body extends React.Component {
             {_.get(this.props, "pageContext.site.data.author.name")}
           </title>
           <meta
+            name="google-site-verification"
+            content="68e2nWiKHyRcMIJaa-fisR0T8dXzqYlIng7X1W_WCp8"
+          />
+          <meta
             name="twitter:image:src"
             content={`https://damiencosset.com/${_.get(
               this.props,
