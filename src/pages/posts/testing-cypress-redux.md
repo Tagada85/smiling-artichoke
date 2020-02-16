@@ -6,13 +6,13 @@ excerpt: >-
 date: "2020-02-15"
 thumb_img_path: images/cypress.png
 content_img_path: images/cypress.png
-tags: ["react", "redux, "cypress", "javascript", "testing"]
+tags: ["react", "redux", "cypress", "javascript", "testing"]
 template: post
 ---
 
 ## Introduction
 
-In the previous article, we started to learn how to use Cypress to test our code, with a focus on React. In this article, we'll explore how to use Cypress with data stores, like Redux.
+In the [previous article](https://damiencosset.com/posts/getting-started-cypress/), we started to learn how to use Cypress to test our code, with a focus on React. In this article, we'll explore how to use Cypress with data stores, like Redux.
 
 This article assumes that you've read the previous article, in order to install Cypress and launch it with your projects. A basic understanding of Redux is also a nice bonus.
 
