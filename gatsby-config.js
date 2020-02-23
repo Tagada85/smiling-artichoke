@@ -7,7 +7,7 @@ module.exports = {
     `gatsby-source-data`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,
-
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
