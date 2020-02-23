@@ -7,7 +7,22 @@ module.exports = {
     `gatsby-source-data`,
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-feed`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `
+      }
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

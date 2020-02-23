@@ -6,7 +6,6 @@ import { htmlToReact, safePrefix } from "../utils";
 
 export default class Page extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <Layout {...this.props}>
         <article className="post page post-full">
