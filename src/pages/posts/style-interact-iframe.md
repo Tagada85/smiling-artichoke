@@ -3,7 +3,7 @@ title: Iframes and communicating between two applications
 subtitle: Because IFrames are awesome!
 excerpt: >-
   Stripe uses them, Yousign uses them, a lot of companies use Iframes to give developers access to their functionalities. Let's see how to create, style and interact with them.
-date: "2020-26-04"
+date: "2020-04-26"
 thumb_img_path: images/iframes.png
 content_img_path: images/iframes.png
 tags: ["html", "css", "javascript"]
