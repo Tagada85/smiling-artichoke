@@ -1,5 +1,5 @@
 ---
-title: Using foreign keys with Loopback 4 ans PostgresQL
+title: Using foreign keys with Loopback 4 and PostgresQL
 subtitle: Setting up a Loopback4/PostgresQL project
 excerpt: >-
   Configuring properly a Loopback 4 project that uses PostgresQL and setting up correctly the foreign keys appeared to be quite difficult for me. In this article, let's explore how you could do it!
@@ -77,7 +77,7 @@ If that's the case, you should be able to connect to a PostgresQL instance:
 
 ![PostgresQL instance](https://dev-to-uploads.s3.amazonaws.com/i/7cmbw0o9i2kx6vhbyem1.png)
 
-The -U flag is followed by the user name you chose when you created your datasource with Loopback. You'll then be prompted to enter the password you entered earlier. If everything went smoothly, you should see `postgres=#` in the command line, meaning that the connection was successfull.
+The -U flag is followed by the user name you chose when you created your datasource with Loopback. You'll then be prompted to enter the password you entered earlier. If everything went smoothly, you should see `postgres=#` in the command line, meaning that the connection was successful.
 
 To create the database, we'll run the command `CREATE DATABASE <Database_Name>;`
 
@@ -155,7 +155,7 @@ _Note:_ You may have to install the package _uuid-ossp_ that provides the functi
 
 I want to make sure that our ID field is indeed using the UUID type. Loopback gives us the Explorer API to easily interact with the database and the models. You can find the Explorer at `http://localhost:3000/explorer`. You can find here our controllers we created earlier and the basic endpoints. Let's quickly create a new Platform. Find the PlatformController and click on the _POST /platforms_ item. Then, click on the _Try it out!_ button on the right. You should see the following screen.
 
-![Inside the Loopack Explorer API](https://dev-to-uploads.s3.amazonaws.com/i/0qxi94tn58ew3simoi3i.png)
+![Inside the Loopback Explorer API](https://dev-to-uploads.s3.amazonaws.com/i/0qxi94tn58ew3simoi3i.png)
 
 We can create a new Platform entity by typing the platform name ( where there is _"string"_. I'm calling my new platform "Best Platform Ever". Then click on _Execute_. You should see this below.
 
