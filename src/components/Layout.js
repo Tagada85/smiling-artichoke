@@ -20,6 +20,11 @@ export default class Body extends React.Component {
             name="google-site-verification"
             content="68e2nWiKHyRcMIJaa-fisR0T8dXzqYlIng7X1W_WCp8"
           />
+          <script
+            data-ad-client="ca-pub-1312670291761945"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
           <meta
             name="twitter:image:src"
             content={`https://damiencosset.com/${_.get(
