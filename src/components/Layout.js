@@ -8,7 +8,6 @@ import Footer from "./Footer";
 
 export default class Body extends React.Component {
   render() {
-    console.log(this.props);
     return (
       <React.Fragment>
         <Helmet>
