@@ -5,7 +5,7 @@ tags: ["philosophy", "life", "stoicism"]
 content_img_path: https://thepracticaldev.s3.amazonaws.com/i/4uk1o9vs78lkga3470to.png
 thumb_img_path: https://thepracticaldev.s3.amazonaws.com/i/4uk1o9vs78lkga3470to.png
 template: post
-date: "2020-12-05"
+date: "2020-05-12"
 excerpt: >-
   Let's talk about a philosophy that changed a lot of things in my life: Stoicism.
 ---

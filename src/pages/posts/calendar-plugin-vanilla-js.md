@@ -3,7 +3,7 @@ title: Create a calendar plugin with vanilla Javascript
 subtitle: Moving away from all the frameworks and libraries
 excerpt: >-
   In this article, we will build a very simple plugin with vanilla Javascript. This plugin will render a Calendar.
-date: "2020-14-05"
+date: "2020-05-14"
 thumb_img_path: images/plugin.png
 content_img_path: images/plugin.png
 tags: ["javascript", "html", "css", "plugin"]
