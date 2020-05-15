@@ -1,9 +1,14 @@
 import React from "react";
 import _ from "lodash";
 import moment from "moment-strftime";
+import { DiscussionEmbed } from "disqus-react";
 
 import { Layout } from "../components/index";
 import { htmlToReact, safePrefix } from "../utils";
+const disqusConfig = {
+  shortname: process.env.GATSBY_DISQUS_NAME,
+  config: { identifier: slug, title },
+};
 
 export default class Post extends React.Component {
   render() {
@@ -61,6 +66,7 @@ export default class Post extends React.Component {
               ).strftime("%A, %B %e, %Y")}
             </time>
           </footer>
+          <DiscussionEmbed {...disqusConfig} />
         </article>
       </Layout>
     );
