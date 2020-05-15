@@ -13,11 +13,11 @@ sections:
     content: >-
       Hello everyone! My name is Damien Cosset and I am a French web developer.
 
-       Since late 2016, I work as a freelancer. I work mostly with Javascript technologies such as React or Meteor. I've also worked with Java for quite some time.
+      I have been a freelancer since 2016. I have used a bunch of technologies on my journey but I do have a preference for Javascript.
 
-       I believe in empowering people and companies with technologies. Code can make our lives better, but it can also make it worse if developers are not careful.
+       I believe in empowering people and companies with technologies.
 
-       On my blog, you will find different types of articles, from classic tutorials to thoughts about our industry and freelancing. I hope you will enjoy it! :heart:
+       On my blog, you will find different types of articles. Most of them will be Javascript related (React, React Native, Meteor, NodeJS...). I try to explain complicated terms in a beginner friendly way. Don't hesitate to ask questions in the comments if anything is unclear :)  I hope you will enjoy it!
 
     actions:
       - label: Contact Me
