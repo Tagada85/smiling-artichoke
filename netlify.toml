@@ -2,4 +2,4 @@
 publish = "public"
 command = "./stackbit-build.sh"
 
-GATSBY_DISQUS_NAME=damcosset-blog
+GATSBY_DISQUS_NAME="damcosset-blog"
