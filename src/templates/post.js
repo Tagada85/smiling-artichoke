@@ -8,10 +8,13 @@ import { htmlToReact, safePrefix } from "../utils";
 
 export default class Post extends React.Component {
   render() {
+    console.log(process.env);
+    console.log(_.get(this.props, "pageContext.frontmatter"));
     let title = _.get(this.props, "pageContext.frontmatter.title");
+    let subtitle = _.get(this.props, "pageContext.frontmatter.subtitle");
     const disqusConfig = {
       shortname: process.env.GATSBY_DISQUS_NAME,
-      config: { identifier: title },
+      config: { identifier: title, subtitle },
     };
     return (
       <Layout {...this.props}>
