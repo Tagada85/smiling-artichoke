@@ -5,13 +5,14 @@ import { DiscussionEmbed } from "disqus-react";
 
 import { Layout } from "../components/index";
 import { htmlToReact, safePrefix } from "../utils";
-const disqusConfig = {
-  shortname: process.env.GATSBY_DISQUS_NAME,
-  config: { identifier: slug, title },
-};
 
 export default class Post extends React.Component {
   render() {
+    let title = _.get(this.props, "pageContext.frontmatter.title");
+    const disqusConfig = {
+      shortname: process.env.GATSBY_DISQUS_NAME,
+      config: { identifier: title },
+    };
     return (
       <Layout {...this.props}>
         <article className="post post-full">
