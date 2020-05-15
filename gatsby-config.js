@@ -2,6 +2,12 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: require("./site-metadata.json"),
   plugins: [
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `damcosset-blog`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-source-data`,
@@ -20,28 +26,28 @@ module.exports = {
               }
             }
           }
-        `
-      }
+        `,
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-149533256-1"
-      }
+        trackingId: "UA-149533256-1",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`
-      }
+        path: `${__dirname}/src/pages`,
+      },
     },
     {
       resolve: `gatsby-plugin-stackbit-static-sass`,
       options: {
         inputFile: `${__dirname}/src/sass/main.scss`,
-        outputFile: `${__dirname}/public/assets/css/main.css`
-      }
+        outputFile: `${__dirname}/public/assets/css/main.css`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -54,7 +60,7 @@ module.exports = {
               ratio: 1.77, // Optional: Defaults to 16/9 = 1.77
               height: 400, // Optional: Overrides optional.ratio
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-              noIframeBorder: true //Optional: Disable insertion of <style> border: 0
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
               // urlOverrides: [
               //   {
               //     id: "youtube",
@@ -62,7 +68,7 @@ module.exports = {
               //       `https://www.youtube-nocookie.com/embed/${videoId}`
               //   }
               // ] //Optional: Override URL of a service provider, e.g to enable youtube-nocookie support
-            }
+            },
           },
           "gatsby-remark-emoji",
           //`gatsby-remark-social-cards`,
@@ -119,24 +125,24 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 590
-            }
+              maxWidth: 590,
+            },
           },
-          `gatsby-remark-component`
-        ]
-      }
+          `gatsby-remark-component`,
+        ],
+      },
     },
     {
       resolve: `gatsby-remark-page-creator`,
-      options: {}
+      options: {},
     },
     {
       resolve: `@stackbit/gatsby-plugin-menus`,
       options: {
         sourceUrlPath: `fields.url`,
         pageContextProperty: `menus`,
-        menus: require("./src/data/menus.json")
-      }
-    }
-  ]
+        menus: require("./src/data/menus.json"),
+      },
+    },
+  ],
 };

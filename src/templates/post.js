@@ -1,21 +1,21 @@
 import React from "react";
 import _ from "lodash";
 import moment from "moment-strftime";
-import { DiscussionEmbed } from "disqus-react";
+import { Disqus, CommentCount } from "gatsby-plugin-disqus";
 
 import { Layout } from "../components/index";
 import { htmlToReact, safePrefix } from "../utils";
 
 export default class Post extends React.Component {
   render() {
-    console.log(process.env);
-    console.log(_.get(this.props, "pageContext.frontmatter"));
     let title = _.get(this.props, "pageContext.frontmatter.title");
-    let subtitle = _.get(this.props, "pageContext.frontmatter.subtitle");
     const disqusConfig = {
-      shortname: process.env.GATSBY_DISQUS_NAME,
-      config: { identifier: title, subtitle },
+      url: "https://damiencosset.com" + _.get(this.props, "pageContext.url"),
+      identifier: title,
+      title,
     };
+
+    console.log(disqusConfig);
     return (
       <Layout {...this.props}>
         <article className="post post-full">
@@ -70,7 +70,9 @@ export default class Post extends React.Component {
               ).strftime("%A, %B %e, %Y")}
             </time>
           </footer>
-          <DiscussionEmbed {...disqusConfig} />
+          <CommentCount config={disqusConfig} placeholder={"..."} />
+
+          <Disqus config={disqusConfig} />
         </article>
       </Layout>
     );
