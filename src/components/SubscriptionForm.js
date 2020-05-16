@@ -8,7 +8,7 @@ const SubscriptionForm = () => {
   const [status, setStatus] = useState(false);
   let _handleSubmit = async (e) => {
     console.log(e);
-    const result = await addToMailchimp(email, { firstName });
+    const result = await addToMailchimp(email, { FNAME: firstName });
     console.log(result);
     setStatus(result);
     // I recommend setting `result` to React state
@@ -37,7 +37,7 @@ const SubscriptionForm = () => {
             value={firstName}
           />
           <button style={{ margin: "10px" }} onClick={_handleSubmit}>
-            Subscribe
+            Let's do this!
           </button>
         </React.Fragment>
       )}
