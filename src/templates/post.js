@@ -3,7 +3,7 @@ import _ from "lodash";
 import moment from "moment-strftime";
 import { Disqus, CommentCount } from "gatsby-plugin-disqus";
 
-import { Layout } from "../components/index";
+import { Layout, SubscriptionForm } from "../components/index";
 import { htmlToReact, safePrefix } from "../utils";
 
 export default class Post extends React.Component {
@@ -70,7 +70,7 @@ export default class Post extends React.Component {
               ).strftime("%A, %B %e, %Y")}
             </time>
           </footer>
-          <CommentCount config={disqusConfig} placeholder={"..."} />
+          <SubscriptionForm />
 
           <Disqus config={disqusConfig} />
         </article>

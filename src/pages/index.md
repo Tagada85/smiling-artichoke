@@ -5,7 +5,7 @@ sections:
     component: HeroBlock
     type: heroblock
     content: >-
-      Javascript, Java technologies with a touch of personal growth on the side.
+      Javascript technologies with a touch of personal growth on the side.
   - section_id: about
     component: ContentBlock
     type: contentblock

@@ -3,6 +3,13 @@ module.exports = {
   siteMetadata: require("./site-metadata.json"),
   plugins: [
     {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://gmail.us20.list-manage.com/subscribe/post?u=ff6b9c607da69eebbf4349f76&amp;id=1a659290ce", // add your MC list endpoint here; see instructions below
+      },
+    },
+    {
       resolve: `gatsby-plugin-disqus`,
       options: {
         shortname: `damcosset-blog`,

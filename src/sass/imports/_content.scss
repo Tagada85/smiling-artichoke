@@ -2,6 +2,16 @@
  * Content
  * ----------------------------------------------------------------------------
  */
+
+.subscription-container {
+  h3 {
+    text-align: center;
+  }
+  input {
+    margin: 10px;
+  }
+}
+
 .post {
   margin-bottom: 3.33333em;
   position: relative;

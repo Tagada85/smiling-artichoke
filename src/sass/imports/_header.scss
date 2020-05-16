@@ -50,7 +50,6 @@
 
   .logo {
     width: 75%;
-    filter: invert(1);
   }
 
   .avatar {
@@ -183,16 +182,16 @@
 }
 
 .site-header.dark {
-  background: _palette(secondary);
+  background: _palette(header-bg);
   border: 0;
   color: _palette(meta);
 
   .site-navigation {
-    background: _palette(secondary);
+    background: _palette(header-bg);
   }
 
   .site-title {
-    color: #fff;
+    color: #10bcf9;
   }
 
   .menu,

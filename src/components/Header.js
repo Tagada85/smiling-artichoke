@@ -3,6 +3,7 @@ import _ from "lodash";
 
 import { Link, safePrefix } from "../utils";
 import Social from "./Social";
+import SubscriptionForm from "./SubscriptionForm";
 
 export default class Header extends React.Component {
   render() {

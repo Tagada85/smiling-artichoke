@@ -7,4 +7,4 @@ menus:
 template: contact
 ---
 
-To get in touch fill the form below.
+A question? A request? Just wanna say Hi? Fill out the form below and let's chat :D
