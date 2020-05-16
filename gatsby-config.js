@@ -122,9 +122,22 @@ module.exports = {
           //     prompt: {
           //       user: "root",
           //       host: "localhost",
-          //       global: false
-          //     }
-          //   }
+          //       global: false,
+          //     },
+          //   },
+          // },
+          // {
+          //   resolve: `gatsby-transformer-remark`,
+          //   options: {
+          //     plugins: [
+          //       {
+          //         resolve: `gatsby-remark-highlight-code`,
+          //         options: {
+          //           terminal: 'ubuntu'
+          //         }
+          //       },
+          //     ],
+          //   },
           // },
           {
             resolve: `gatsby-remark-images`,
