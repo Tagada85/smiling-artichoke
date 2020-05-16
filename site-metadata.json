@@ -4,7 +4,7 @@
   "siteUrl": "https://damiencosset.com",
   "header": {
     "title": "Damien Cosset",
-    "tagline": "French web developer working with Javascript and JAVA",
+    "tagline": "French web developer working with Javascript",
     "profile_img": "images/logoblue.png",
     "bg": "dark",
     "has_nav": true,
@@ -13,5 +13,5 @@
   "footer": {
     "content": "&copy; All rights reserved."
   },
-  "title": "Damien Cosset Website about web development. Javascript and JAVA related with a touch of personal growth."
+  "title": "Damien Cosset Website about web development. Javascript related with a touch of personal growth."
 }

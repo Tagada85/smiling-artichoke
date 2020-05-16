@@ -43,6 +43,9 @@
   -webkit-flex: 0 0 auto;
   flex: 0 0 auto;
   margin: 0 15px 0 0;
+  @media screen and (max-width: 600px) {
+    width: 80%;
+  }
 
   a {
     border: 0;
@@ -85,6 +88,9 @@
 #menu-toggle {
   margin-left: auto;
   z-index: 100;
+  position: absolute;
+  right: 15px;
+  top: 10px;
 }
 
 .site-navigation {
@@ -237,6 +243,9 @@
   .site-identity {
     margin-bottom: 1.66667em;
     padding: 0;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 
   .site-logo {
