@@ -6,3 +6,5 @@ menus:
     title: Subscribe
 template: Subscribe
 ---
+
+Subscription Form
