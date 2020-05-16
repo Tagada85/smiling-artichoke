@@ -4,7 +4,7 @@ menus:
   main:
     weight: 6
     title: Subscribe
-template: Subscribe
+template: subscribe
 ---
 
-Subscription Form
+A question? A request? Just wanna say Hi? Fill out the form below and let's chat :D
