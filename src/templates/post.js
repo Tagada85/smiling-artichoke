@@ -15,7 +15,6 @@ export default class Post extends React.Component {
       title,
     };
 
-    console.log(disqusConfig);
     return (
       <Layout {...this.props}>
         <article className="post post-full">
