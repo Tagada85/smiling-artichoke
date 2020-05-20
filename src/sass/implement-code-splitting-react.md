@@ -45,4 +45,6 @@ Of course, this is oversimplified, because there are a lot of steps in the bundl
 
 Bundling is great when your application is small, but as your application grows, the bundle grows as well. That means, if a user loads the home page of your web app, she will still have to import the bundle of your ENTIRE application...
 
-This can cause performance issues. To avoid this,
+This can cause performance issues. To avoid this, we can implement code splitting. In this article, we will use code splitting based on our routes.
+
+## React.lazy() and Suspense
