@@ -4,8 +4,8 @@ subtitle: Exploring another famous Javascript acronym
 excerpt: >-
   In this article, we will understand what is an IIFE in Javascript and why you would want to use them.
 date: "2020-05-17"
-thumb_img_path: https://dev-to-uploads.s3.amazonaws.com/i/hit6r2erpuls3pwaolfx.jpg
-content_img_path: https://dev-to-uploads.s3.amazonaws.com/i/hit6r2erpuls3pwaolfx.jpg
+thumb_img_path: images/iife.jpg
+content_img_path: images/iife.jpg
 tags: ["javascript", "iife"]
 template: post
 ---
