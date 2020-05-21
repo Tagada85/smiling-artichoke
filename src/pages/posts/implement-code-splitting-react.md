@@ -221,3 +221,7 @@ More files, but smaller files. And that's the point :wink:
 Hope it was clear enough. If not, as always, don't hesitate to ask questions in the comments.
 
 Have fun :heart:
+
+_Source:_
+
+- [React documentation about code splitting](https://reactjs.org/docs/code-splitting.html#code-splitting)
