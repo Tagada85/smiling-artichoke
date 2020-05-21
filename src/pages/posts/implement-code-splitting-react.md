@@ -214,7 +214,7 @@ Fantastic! You have successfully implemented code splitting in your React applic
 
 I am using _create-react-app_, which uses Webpack. If I run `npm run build` after implementing code splitting, I can see that Webpack is creating different bundles now.
 
-// Show image
+![Our new bundles](/images/code-splitting-bundles.png)
 
 More files, but smaller files. And that's the point :wink:
 
