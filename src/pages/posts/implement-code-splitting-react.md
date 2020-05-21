@@ -76,7 +76,7 @@ _React.lazy_ takes a function that returns a dynamic import. This component will
 
 Note that the component that you dynamically import needs to be a default export, and of course, it needs to export a React component.
 
-So, if we implement code-splitting based on our routes, this means that if a user checks our application and never travels to a particular route, that route won't be imported at all. A huge benefit for your user, as you will only force her browser to import exactly what he needs, and nothing more.
+So, if we implement code-splitting based on our routes, this means that if a user checks our application and never travels to a particular route, that route won't be imported at all. A huge benefit for your user, as you will only force her browser to import exactly what she needs, and nothing more.
 
 ## Suspense
 
@@ -197,14 +197,15 @@ export default () => {
   return (
     <Router history={history}>
       <Header />
-      <Suspense fallback={<div>Loading page...</div>} />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/products" component={Products} />
-        <Route path="/blog" component={Blog} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
+      <Suspense fallback={<div>Loading page...</div>}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/products" component={Products} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+      </Suspense>
     </Router>
   );
 };
