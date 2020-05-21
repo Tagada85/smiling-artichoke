@@ -87,7 +87,7 @@ console.log(iife.privateVariable); // privateVariable is not defined
 
 IIFE are quite popular when writing Javascript plugins. That allow the users to use the functionality several plugins without having their global scope invaded by thousands of variables. IIFEs just populate the global scope with what they need to work, usually just one variable.
 
-You can find an example in [this article](https://damiencosset.com/posts/what-are-javascript-iife/), where I wrote a simple Calendar plugin.
+You can find an example in [this Calendar plugin article](https://damiencosset.com/posts/calendar-plugin-vanilla-js/), where I wrote a simple Calendar plugin.
 
 Basically, a plugin could look something like this. It's a bit more complicated, but it's still an IIFE.
 
