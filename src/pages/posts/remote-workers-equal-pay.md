@@ -26,7 +26,7 @@ According to this tweet:
 <br/>
 Our good friend Zucky is basically saying Facebook will not pay employees the same based on their location. There are no details yet of what will be done, and how. But it begs the question:
 
-###### Should remote workers salary differ based on their location?
+###### Should remote workers salaries differ based on their location?
 
 Assuming two developers with the same skills, experience and productivity. One lives in New York, the other lives in Marrakech. As a CEO, should you adapt the salary of the developer living in New York, because the cost of living will be much higher than in Morocco?
 
