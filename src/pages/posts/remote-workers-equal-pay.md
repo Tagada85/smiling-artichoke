@@ -22,6 +22,8 @@ These two are just some examples of how the crisis _help_ the work from home mov
 
 According to this tweet:
 
+<img alt="Tweet about remote work for Facebook" src='./images/remote-work-tweet.png'>
+<br/>
 Our good friend Zucky is basically saying Facebook will not pay employees the same based on their location. There are no details yet of what will be done, and how. But it begs the question:
 
 ###### Should remote workers salary differ based on their location?
