@@ -1,6 +1,6 @@
 ---
 title: Should remote workers be paid differently based on location?
-subtitle:
+subtitle: ""
 excerpt: >-
   The COVID-19 crisis has brought remote working to an all-time high in the world. But with this new world order comes a new question: should workers be paid differently if they don't live in the same area?
 date: "2020-05-22"

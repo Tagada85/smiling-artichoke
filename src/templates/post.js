@@ -1,19 +1,37 @@
-import React from "react";
+//import { graphql } from "gatbsy";
+import { Disqus } from "gatsby-plugin-disqus";
 import _ from "lodash";
 import moment from "moment-strftime";
-import { Disqus, CommentCount } from "gatsby-plugin-disqus";
-
+import React from "react";
 import { Layout, SubscriptionForm } from "../components/index";
-import { htmlToReact, safePrefix } from "../utils";
+import { getPages, htmlToReact, safePrefix } from "../utils";
 
 export default class Post extends React.Component {
   render() {
     let title = _.get(this.props, "pageContext.frontmatter.title");
+    let tags = _.get(this.props, "pageContext.frontmatter.tags");
     const disqusConfig = {
       url: "https://damiencosset.com" + _.get(this.props, "pageContext.url"),
       identifier: title,
       title,
     };
+
+    let pages = getPages(this.props.pageContext.pages, "/posts");
+    let postsWithSimilarTagOne = _.orderBy(
+      _.filter(pages, (post) => post.frontmatter.tags.includes(tags[0])),
+      "frontmatter.date",
+      "desc"
+    );
+
+    let postsWithSimilarTagTwo = _.orderBy(
+      _.filter(pages, (post) => post.frontmatter.tags.includes(tags[1])),
+      "frontmatter.date",
+      "desc"
+    );
+    postsWithSimilarTagOne.shift();
+    postsWithSimilarTagTwo.shift();
+    console.log(postsWithSimilarTagOne);
+    console.log(postsWithSimilarTagTwo);
 
     return (
       <Layout {...this.props}>
@@ -69,6 +87,27 @@ export default class Post extends React.Component {
               ).strftime("%A, %B %e, %Y")}
             </time>
           </footer>
+          <div className="similar-posts-container">
+            <h4>You may also like:</h4>
+            {postsWithSimilarTagOne.slice(0, 2).map((post) => {
+              return (
+                <p>
+                  <a href={safePrefix(_.get(post, "url"))}>
+                    {post.frontmatter.title}
+                  </a>
+                </p>
+              );
+            })}
+            {postsWithSimilarTagTwo.slice(0, 2).map((post) => {
+              return (
+                <p>
+                  <a href={safePrefix(_.get(post, "url"))}>
+                    {post.frontmatter.title}
+                  </a>
+                </p>
+              );
+            })}
+          </div>
           <SubscriptionForm />
 
           <Disqus config={disqusConfig} />

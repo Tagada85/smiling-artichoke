@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-
 import addToMailchimp from "gatsby-plugin-mailchimp";
+import React, { useState } from "react";
 
 const SubscriptionForm = () => {
   const [email, setEmail] = useState("");
@@ -16,7 +15,7 @@ const SubscriptionForm = () => {
   };
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center", margin: "50px 0px" }}>
       <h3>Subscribe to never miss another article!</h3>
       {!status && (
         <React.Fragment>
