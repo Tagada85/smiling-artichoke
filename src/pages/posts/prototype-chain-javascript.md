@@ -1,5 +1,5 @@
 ---
-title: Understanding prototypes and inheritance in Javascript
+title: Understanding Prototypes and Inheritance in Javascript
 subtitle: Trying to explain simply a confusing concept.
 excerpt: >-
   In this article, we will explain a concept that got me confused for a long time: Prototypes and Inheritance in Javascript. What are prototypes? How do they work?
