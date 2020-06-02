@@ -3,9 +3,9 @@ title: Object.seal vs Object.freeze in Javascript
 subtitle: Sealing or Freezing? Not quite the same story
 excerpt: >-
   Ever wondered what were the differences between Object.seal() and Object.freeze() in Javascript? This article is for you!
-date: "2020-05-28"
-thumb_img_path: images/code-splitting-bundles.png
-content_img_path: images/code-splitting-bundles.png
+date: "2020-06-02"
+thumb_img_path: images/freeze-seal.jpeg
+content_img_path: images/freeze-seal.jpeg
 tags: ["react", "javascript", "performance"]
 template: post
 ---
@@ -218,4 +218,39 @@ let notSealedObj = { a: 54 };
 Object.isSealed(notSealedObj); // === false
 ```
 
-## Differences with const
+## What about const?
+
+You might be tempted to look at _Object.seal_ and _Object.freeze_ and compare them to **const**. Remember that they are different concepts. _Object.freeze_ and _Object.seal_ apply on the **values** of an object, and _const_ applies on the **binding**. _Object.freeze_ makes an object immutable. _const_ creates an immutable binding. Once you assign a value to a variable, you can't assign a new value to that binding.
+
+## What about prototypes?
+
+One last thing I need to mention: prototypes. I've writing an article about Javascript prototypes if you are not familiar with it. When it comes to _Object.freeze_ and _Object.seal_, know that you also can't change their prototypes once they are frozen or sealed.
+
+```javascript
+let freezeThat = {
+  name: 'Damien'
+}
+
+let sealThis = {
+  age 28
+}
+
+Object.freeze(freezeThat)
+Object.seal(sealThis)
+
+
+// These two lines will fail!
+Object.setPrototypeOf(freezeThat, {x: 26})
+Object.setPrototypeOf(sealThis, {alive: true})
+
+```
+
+_setPrototypeOf_ is used to change the prototype of an object. When the object is sealed or frozen, you will not be able to do that. As always, in non-strict mode, it will fail silently. In strict mode, you will see a `TypeError: Object is not extensible.`
+
+## Conclusion
+
+It's important to know the differences between _Object.freeze_ and _Object.seal_. Being aware of those differences will avoid you some trouble when you use them in your code.
+
+To recap:
+
+![Image summarizing the differences between Object.freeze and Object.seal](images/recap-freeze-seal.png)
