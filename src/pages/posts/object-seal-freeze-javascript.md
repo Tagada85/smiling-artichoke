@@ -105,7 +105,7 @@ What we have when we call _Object.freeze_ is a **shallow freeze**. We only freez
 To make the entire object and everything inside immutable, you have to call _Object.freeze()_ on every element. Here is one way you could do this:
 
 ```javascript
-let allYouCanFreeze = () => {
+let allYouCanFreeze = (obj) => {
   // Retrieve the properties names
   let propNames = Object.getOwnPropertyNames(obj);
 
