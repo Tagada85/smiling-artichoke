@@ -66,13 +66,13 @@ console.log(objectToFreeze)
   name: 'Damien',
   pets: [ 'Symba', 'Hades', 'Kiwi', 'Grenade' ],
   sibling: {
-    age: 25,
+    age: 26,
     name: 'Corentin'
   }
 }
 ```
 
-The _delete_ failed, modifying the _name_ property failed and adding the _lastName_ property failed. But modifying the array worked.
+The _delete_ failed, modifying the _name_ property failed and adding the _lastName_ property failed. But modifying the array and the nested sibling object worked.
 
 _Note: If you are not in strict mode, it will fail silently. In strict mode, you will get TypeErrors_
 
