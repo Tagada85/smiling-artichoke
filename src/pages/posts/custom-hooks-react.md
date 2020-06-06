@@ -187,7 +187,7 @@ See how much less code we need to write? The _useCommentsRetriever_ takes an id 
 
 Note that I could have named those variables any way I wanted. I could have named them differently in the two components as well. So, when you see the same syntax used in the _useState_ hook, this is because the _useState_ hook also returns an array :wink:
 
-I have an article on the state hook if you want to know more.
+I have [an article on the state hook](https://damiencosset.com/posts/react-hooks-state/) if you want to know more.
 
 ### Do we have to start our custom hooks with use?
 
