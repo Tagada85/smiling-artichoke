@@ -30,8 +30,6 @@ export default class Post extends React.Component {
     );
     postsWithSimilarTagOne.shift();
     postsWithSimilarTagTwo.shift();
-    console.log(postsWithSimilarTagOne);
-    console.log(postsWithSimilarTagTwo);
 
     return (
       <Layout {...this.props}>

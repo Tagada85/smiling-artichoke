@@ -6,9 +6,7 @@ const SubscriptionForm = () => {
   const [firstName, setFirstName] = useState("");
   const [status, setStatus] = useState(false);
   let _handleSubmit = async (e) => {
-    console.log(e);
     const result = await addToMailchimp(email, { FNAME: firstName });
-    console.log(result);
     setStatus(result);
     // I recommend setting `result` to React state
     // but you can do whatever you want
