@@ -3,6 +3,12 @@ module.exports = {
   siteMetadata: require("./site-metadata.json"),
   plugins: [
     {
+      resolve: `gatsby-plugin-web-monetization`,
+      options: {
+        paymentPointer: `$ilp.uphold.com/QdybDnRqE3EJ`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-mailchimp",
       options: {
         endpoint:
