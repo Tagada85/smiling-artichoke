@@ -2,7 +2,7 @@
 import { Disqus } from "gatsby-plugin-disqus";
 import _ from "lodash";
 import moment from "moment-strftime";
-import React from "react";
+import React, { Fragment } from "react";
 import { Layout, SubscriptionForm } from "../components/index";
 import { getPages, htmlToReact, safePrefix } from "../utils";
 
@@ -86,25 +86,30 @@ export default class Post extends React.Component {
             </time>
           </footer>
           <div className="similar-posts-container">
-            <h4>You may also like:</h4>
-            {postsWithSimilarTagOne.slice(0, 2).map((post) => {
-              return (
-                <p>
-                  <a href={safePrefix(_.get(post, "url"))}>
-                    {post.frontmatter.title}
-                  </a>
-                </p>
-              );
-            })}
-            {postsWithSimilarTagTwo.slice(0, 2).map((post) => {
-              return (
-                <p>
-                  <a href={safePrefix(_.get(post, "url"))}>
-                    {post.frontmatter.title}
-                  </a>
-                </p>
-              );
-            })}
+            {postsWithSimilarTagOne.length > 0 ||
+            postsWithSimilarTagTwo.length > 0 ? (
+              <Fragment>
+                <h4>You may also like:</h4>
+                {postsWithSimilarTagOne.slice(0, 2).map((post) => {
+                  return (
+                    <p>
+                      <a href={safePrefix(_.get(post, "url"))}>
+                        {post.frontmatter.title}
+                      </a>
+                    </p>
+                  );
+                })}
+                {postsWithSimilarTagTwo.slice(0, 2).map((post) => {
+                  return (
+                    <p>
+                      <a href={safePrefix(_.get(post, "url"))}>
+                        {post.frontmatter.title}
+                      </a>
+                    </p>
+                  );
+                })}
+              </Fragment>
+            ) : null}
           </div>
           <SubscriptionForm />
 
