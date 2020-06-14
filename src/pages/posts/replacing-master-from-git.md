@@ -14,6 +14,8 @@ template: post
 
 The master/slave denomination is a common one in technology. Master/slave is an oppressive metaphor referring to the practice of slavery. These metaphors are inappropriate when describing concepts in technology. They are also inaccurate. Using these metaphors takes away the history of slavery and put it into a context where it does not belong.
 
+**Edit**: The git's master is historically tied to the master/slave denomination. [It got the name from BitKeeper](https://mail.gnome.org/archives/desktop-devel-list/2019-May/msg00066.html).
+
 Words matter. The words we use to define concepts have a lot of importance, even in our tech environment. Git is one of those environments where the word _master_ is still used. But, it's not that complicated to take it away. We have to do two things:
 
 - Replacing the word on existing branches, both locally and remotely
