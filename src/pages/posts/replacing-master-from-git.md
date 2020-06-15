@@ -16,6 +16,8 @@ The master/slave denomination is a common one in technology. Master/slave is an 
 
 **Edit**: The git's master is historically tied to the master/slave denomination. [It got the name from BitKeeper](https://mail.gnome.org/archives/desktop-devel-list/2019-May/msg00066.html).
 
+**Edit 2**: [Github is looking to replace the word master](https://www.zdnet.com/article/github-to-replace-master-with-alternative-term-to-avoid-slavery-references/)
+
 Words matter. The words we use to define concepts have a lot of importance, even in our tech environment. Git is one of those environments where the word _master_ is still used. But, it's not that complicated to take it away. We have to do two things:
 
 - Replacing the word on existing branches, both locally and remotely
