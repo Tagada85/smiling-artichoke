@@ -97,7 +97,7 @@ This attribute will hide an element, or group of elements to screen readers. How
 
 To hide an element (and its children!) from screen readers, you just add the **aria-hidden="true"** attribute.
 
-Example: Below is a screenshot of a website. There a lot of informations. There are images placed everywhere. It looks nice, but it won't give any useful information to someone visiting the website with a screen reader. It's better to hide them.
+Example: Below is a screenshot of a website. There are a lot of informations. There are images placed everywhere. It looks nice, but it won't give any useful information to someone visiting the website with a screen reader. It's better to hide them.
 
 ![Screenshot of a website with unnecessary images for screen readers](./images/screen-a11y.png)
 
