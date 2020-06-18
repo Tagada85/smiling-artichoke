@@ -117,3 +117,7 @@ We can either use _aria-hidden_ on the images individually, or, if the HTML mark
 There you go!
 
 Have fun :heart:
+
+**Source**:
+
+[Accessibility guidelines: Accessible hiding and aria-hidden](https://a11y-guidelines.orange.com/web_EN/exemples/masquage/index.html)
