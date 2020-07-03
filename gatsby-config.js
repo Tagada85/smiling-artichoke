@@ -2,6 +2,7 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: require("./site-metadata.json"),
   plugins: [
+    `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-plugin-web-monetization`,
       options: {
