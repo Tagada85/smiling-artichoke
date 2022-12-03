@@ -4,8 +4,8 @@ subtitle: Different vibe, but very interesting nonetheless
 excerpt: >-
   Is it a classic developer path? Moving into a management role after a few years? Well, my path is certainly going in that direction. So, what am I learning?
 date: "2022-12-02"
-thumb_img_path: images/thinking-management.jpeg
-content_img_path: images/thinking-management.jpeg
+thumb_img_path: images/thinking.jpeg
+content_img_path: images/thinking.jpeg
 tags: ["management"]
 template: post
 ---
